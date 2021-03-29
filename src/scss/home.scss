@@ -1,0 +1,68 @@
+.land-page {
+    color: white;
+    overflow: hidden;
+    width: 100vw; 
+    height: 100vh;
+    background-color: skyblue;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-bg1{
+        position: absolute;
+        opacity: 0.2;
+        height: 450px;
+        animation: float 1s infinite ease;
+        &:nth-child(2){
+            height: 480px;
+            animation: none;
+        }
+    }
+
+    &-title{
+        text-align: center;
+    }
+    &-links{
+        display: flex;
+        justify-content: space-around;
+        flex: 0;
+    }
+
+    a{
+        text-decoration: none;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .login-btn {
+        border: solid white 1px;
+        color: white;
+        background-color: rgb(49, 186, 231);
+        padding: 10px 15px;
+        border-radius: 5px;
+        &:hover{
+            padding: 20px 25px;
+        }
+    }
+    .cad-btn{
+        border: solid white 1px;
+        color: skyblue;
+        background-color: white;
+        padding: 10px 15px;
+        border-radius: 5px;
+    }
+}
+
+@keyframes float{
+    from {
+        height: 450px;
+    }
+    50%{
+        height: 455px;
+    }
+    to{
+        height: 450px;
+    }
+}
+
+
